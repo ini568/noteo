@@ -1,0 +1,8 @@
+{
+	"appId": "com.noteo.app",
+	"appName": "Noteo",
+	"webDir": "dist",
+	"server": {
+		"androidScheme": "http"
+	}
+}
