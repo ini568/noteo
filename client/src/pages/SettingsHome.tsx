@@ -143,7 +143,23 @@ export default function SettingsHome() {
             placeholder='JSON, напр. {"save":"Ctrl+S"}'
             value={hotkeys} onChange={(e)=>setHotkeys(e.target.value)} />
         </div>
+              {/* Данные и резервные копии */}
+      <div className="card">
+        <div className="card-title">Данные и резервные копии</div>
+        <div className="row" style={{justifyContent:"flex-start",gap:8}}>
+          <button className="btn" onClick={()=>{/* триггер фоновой синхронизации */ alert("Синхронизация…")}}>
+            ⟳ {t("sync_now")}
+          </button>
+          <button className="btn" onClick={()=>{/* экспорт */ alert("Экспорт данных…")}}>
+            ⬇ {t("export_data")}
+          </button>
+          <button className="btn" onClick={()=>{/* резервная копия */ alert("Резервная копия…")}}>
+            ⤓ {t("backup")}
+          </button>
+        </div>
+
       </div>
+    </div>
 
       {/* Безопасность и приватность */}
       {!hidden("Безопасность", "автоблокировка","анали")}

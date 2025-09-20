@@ -33,6 +33,9 @@ const ru: Dict = {
   danger_zone: "Опасные действия",
   logout: "Выйти",
   confirm_logout: "Выйти из аккаунта?",
+  back: "Назад",
+  Free: "Бесплатно",
+  free: "Бесплатно",
 };
 
 const en: Dict = {
@@ -65,6 +68,9 @@ const en: Dict = {
   danger_zone: "Danger zone",
   logout: "Sign out",
   confirm_logout: "Sign out of account?",
+  back: "Back",
+  Free: "Free",
+  free: "Free",
 };
 
 const dicts = { ru, en };
